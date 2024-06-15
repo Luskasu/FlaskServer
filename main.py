@@ -7,7 +7,7 @@ app = Flask(__name__)
 def upload():
     file = request.files['file']
     
-    file.save('files\ ' + file.filename) 
+    file.save('files\\' + file.filename) 
     return 'upado com sucesso'
 
 if __name__ == "__main__":
